@@ -1,0 +1,111 @@
+:root {
+    --bg: #0f172a;
+    --panel: #111827;
+    --panel-soft: #1f2937;
+    --text: #e5e7eb;
+    --muted: #94a3b8;
+    --accent: #60a5fa;
+    --border: #334155;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+code,
+pre {
+    font-family: Consolas, "Courier New", monospace;
+}
+
+.site-header {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.logo {
+    max-width: 140px;
+    height: auto;
+    display: block;
+    margin: 0 auto 16px;
+}
+
+.subtitle {
+    color: var(--muted);
+    margin-top: 8px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 16px 20px 24px;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+}
+
+.card,
+.policy {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+.site-footer {
+    text-align: center;
+    color: var(--muted);
+    padding: 24px 20px 40px;
+}
+
+.lang-switch {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.policy h2,
+.policy h3 {
+    margin-top: 0;
+}
+
+.policy ul {
+    padding-left: 20px;
+}
+
+.meta {
+    color: var(--muted);
+    margin-bottom: 16px;
+}
+
+.notice {
+    border-left: 4px solid #f59e0b;
+    background: rgba(245, 158, 11, 0.08);
+    padding: 12px 16px;
+    border-radius: 8px;
+}
